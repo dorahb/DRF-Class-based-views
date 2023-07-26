@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ToDo List</title>
+</head>
+<body>
+    <h1>ToDo List</h1>
+    <ul>
+        {% for todo_item in todo_items %}
+            <li>
+                <strong>{{ todo_item.title }}</strong> (Due: {{ todo_item.due_on }})
+                <p>{{ todo_item.body }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
